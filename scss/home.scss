@@ -1,0 +1,181 @@
+* {
+	box-sizing: border-box;
+}
+
+.row::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+[class*="col-"] {
+	float: left;
+	padding: 8px;
+}
+
+html {
+	font-family: "Lucida Sans", sans-serif;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+	width: 100%;
+}
+/* Responsive https://www.w3schools.com/css/css_rwd_intro.asp */
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-s-1 {width: 8.33%;}
+	.col-s-2 {width: 16.66%;}
+	.col-s-3 {width: 25%;}
+	.col-s-4 {width: 33.33%;}
+	.col-s-5 {width: 41.66%;}
+	.col-s-6 {width: 50%;}
+	.col-s-7 {width: 58.33%;}
+	.col-s-8 {width: 66.66%;}
+	.col-s-9 {width: 75%;}
+	.col-s-10 {width: 83.33%;}
+	.col-s-11 {width: 91.66%;}
+	.col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+
+.container {
+	background-color: rgb(10, 10, 72);
+	border-radius: 15px;
+	padding: 6px;
+
+    .content-left {
+        border-radius: 10px;
+        padding: 5em;
+
+        .search {
+            border: 2px solid lightblue;
+            border-radius: 10px;
+            padding: 10px;
+
+            button, input {
+                padding: 5px;
+                color: white;
+                border: none;
+                background: none;
+            }
+        }
+
+        .card {
+            color: white;
+            p {
+                color: grey;
+            }
+        }
+        .project-flex {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+
+            .flex-item {
+                flex: 30%;
+                padding: 5px;  
+                margin: 4px;
+                border-radius: 10px;
+                border: 2px solid lightblue;
+                align-items: center;
+
+                .project {
+                    color: blue;
+                    font-size: 20px;
+                    padding: 20px;
+                    background-color: yellowgreen;
+                    margin-bottom: 5px;
+                    border-radius: 10px;
+                }
+                .show-more {
+                    background-color: grey;
+                    color: white;
+                }
+            }
+            .flex-item:hover {
+                background-color: blue;
+            }
+            
+        }
+    }
+
+    .content-right {
+        background-color: white;
+        border-radius: 10px;
+        padding: 3em;
+
+        .card {
+            h1, h2 {
+                color: black;
+            }
+            p {
+                color: grey;
+                font-size: 0.7em;
+            }
+            #task-today {
+                font-size: 0.7em;
+            }
+        }
+
+        .add-button {
+            display: flex;
+            float: right;
+            justify-content: end;
+            background-color: rgb(114, 51, 186);
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+        }
+    }
+}
+
+.status-button {
+	padding: 5px;
+	color: red;
+    flex: auto;
+    font-size: 0.8em;
+    border-radius: 10px;
+    display: inline;
+    width: 100px;
+}
+
+.btn-waiting {
+    color: black
+}
+
+.btn-inprogress {
+    color: orangered
+}
+
+.btn-inreview {
+    color: blue
+}
+
+.btn-done {
+    color: green
+}
+
+.btn-none {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+

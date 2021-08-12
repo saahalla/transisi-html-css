@@ -1,0 +1,247 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 8px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+/* Responsive https://www.w3schools.com/css/css_rwd_intro.asp */
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+}
+
+.container {
+  background-color: #0a0a48;
+  border-radius: 15px;
+  padding: 6px;
+}
+
+.container .content-left {
+  border-radius: 10px;
+  padding: 5em;
+}
+
+.container .content-left .search {
+  border: 2px solid lightblue;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.container .content-left .search button, .container .content-left .search input {
+  padding: 5px;
+  color: white;
+  border: none;
+  background: none;
+}
+
+.container .content-left .card {
+  color: white;
+}
+
+.container .content-left .card p {
+  color: grey;
+}
+
+.container .content-left .project-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 10px;
+  text-align: center;
+  color: white;
+}
+
+.container .content-left .project-flex .flex-item {
+  -webkit-box-flex: 30%;
+      -ms-flex: 30%;
+          flex: 30%;
+  padding: 5px;
+  margin: 4px;
+  border-radius: 10px;
+  border: 2px solid lightblue;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content-left .project-flex .flex-item .project {
+  color: blue;
+  font-size: 20px;
+  padding: 20px;
+  background-color: yellowgreen;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.container .content-left .project-flex .flex-item .show-more {
+  background-color: grey;
+  color: white;
+}
+
+.container .content-left .project-flex .flex-item:hover {
+  background-color: blue;
+}
+
+.container .content-right {
+  background-color: white;
+  border-radius: 10px;
+  padding: 3em;
+}
+
+.container .content-right .card h1, .container .content-right .card h2 {
+  color: black;
+}
+
+.container .content-right .card p {
+  color: grey;
+  font-size: 0.7em;
+}
+
+.container .content-right .card #task-today {
+  font-size: 0.7em;
+}
+
+.container .content-right .add-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  background-color: #7233ba;
+  padding: 15px;
+  border-radius: 10px;
+  color: white;
+}
+
+.status-button {
+  padding: 5px;
+  color: red;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  font-size: 0.8em;
+  border-radius: 10px;
+  display: inline;
+  width: 100px;
+}
+
+.btn-waiting {
+  color: black;
+}
+
+.btn-inprogress {
+  color: orangered;
+}
+
+.btn-inreview {
+  color: blue;
+}
+
+.btn-done {
+  color: green;
+}
+
+.btn-none {
+  border: none;
+  background: none;
+  padding: 0;
+}
+/*# sourceMappingURL=home.css.map */

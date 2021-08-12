@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Task Management</title>
+</head>
+<body>
+
+<div class="row container">
+    <!-- left content -->
+    <div class="col-6 col-s-6 content-left">
+      <div class="col-8 col-s-8 card">
+        <div>
+          <h2>Hi Saahalla</h2>
+          <p>Welcome back to the workspace, we missed You!</p>
+
+          <div class="search">
+            <button type="submit"><i class="fa fa-search"></i></button>
+            <input type="text" placeholder="Search" name="search2">
+          </div>
+
+        </div>
+
+        <div>
+          <h4 id="title-project"></h4>
+          <div id="project-list" class="project-flex"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- right content -->
+    <div class="col-6 col-s-6 content-right">
+      <div class="col-10 col-s-10 card">
+        <div>
+          <h2>Cyber Punk</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae sapiente et neque aspernatur?</p>
+        </div>
+        <div>
+          <h3>Today</h3>
+          <hr>
+          
+          <div id="task-today"></div>
+        </div>
+      </div>
+      <div class="col-12 col-s-12">
+        <button class="add-button" id="add-button"><i class="fa fa-plus"></i></button>
+      </div>
+    </div>
+</div>
+<script src="./javascript/script.js"></script>
+
+</body>
+</html>
